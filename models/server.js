@@ -24,6 +24,8 @@ this.io = socketio(this.server, {/*   configuraciones */ });
 middlwares(){
 //desplegar el directorio publico
 this.app.use(express.static(path.resolve(__dirname,'../public' )           ))
+
+//cors
 this.app.use(cors())
 
 }
